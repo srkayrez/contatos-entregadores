@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 
 @NgModule({
@@ -15,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatTableModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
