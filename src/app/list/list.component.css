@@ -2,6 +2,15 @@ table {
   width: 100%;
 }
 
+.colun {
+  text-align: center;
+}
+
+img
+{
+  align-items: center;
+}
+
 tr.example-detail-row {
   height: 0;
 }

@@ -1,4 +1,7 @@
+import { contatos } from './list/model';
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { AddNewContatoComponent } from './add-new-contato/add-new-contato.component';
 
 
 @Component({
@@ -8,4 +11,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contatos-motoboy';
+  contatos: any;
+
+ 
 }
+

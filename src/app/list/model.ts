@@ -1,6 +1,5 @@
 export interface contatos {
-  id : number,
-  nome : string,
+  contato : string,
   telefone : number,
   localizacao ?: string,
 }

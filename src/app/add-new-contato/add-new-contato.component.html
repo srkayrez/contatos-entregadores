@@ -1,0 +1,19 @@
+<form>
+  <mat-form-field class="rounded-full" appearance="fill">
+    <mat-label> Nome </mat-label>
+    <input id="nome" autocomplete="off" matInput placeholder="Ex. Borracharia do zé">
+  </mat-form-field>
+
+  <mat-form-field class="rounded-full" appearance="fill">
+    <mat-label> Numero </mat-label>
+    <input id="numero" autocomplete="off" matInput placeholder="Ex. 16 9 9999-9999">
+  </mat-form-field>
+
+  <mat-form-field class="rounded-full" appearance="fill">
+    <mat-label> categoria </mat-label>
+    <input id="categoria" autocomplete="off" matInput placeholder="Ex. Borracharia">
+  </mat-form-field>
+
+  <button (click)="enviarContato()" id="btn" mat-raised-button class="bg-red-500 p-2 rounded-lg float-right">Enviar</button>
+</form>
+
