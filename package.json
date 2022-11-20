@@ -30,6 +30,7 @@
     "@angular/cli": "~14.1.1",
     "@angular/compiler-cli": "^14.1.0",
     "@types/jasmine": "~4.0.0",
+    "angular-cli-ghpages": "^1.0.3",
     "autoprefixer": "^10.4.12",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",

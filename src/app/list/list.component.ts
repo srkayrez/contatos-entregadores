@@ -19,8 +19,9 @@ import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.compo
   })
 
 export class ListComponent implements OnInit {
+  displayedColumns: string[] = ['ArrumarCelular','Opcao'];
 
-  dataSource = contato;
+  dataSource = ArrumarCelular;
   columnsToDisplay = ['contato'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement: contatos | null;
@@ -43,6 +44,18 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openWhatsApp(element): void {
+    window.open('https://wa.me/' + element.telefone)
+  }
+
+  openTelefone(element): void {
+    window.open('tel:' + element.telefone);
+  }
+
+  openMap(element): void {
+    window.open(element.localizacao)
+  }
+
 }
 export interface contatos {
   area : string,
@@ -52,7 +65,7 @@ export interface contatos {
 }
 
 
-const contato : contatos[] = [
+const ArrumarCelular : contatos[] = [
   {
     area: "Arrumar Celular",
     contato: "Arrumar Celular A&R Assisstência 1",
@@ -65,6 +78,9 @@ const contato : contatos[] = [
     telefone : 5516982527178,
     localizacao : ""
   },
+]
+
+const Borracheiro : contatos[]=[
   {
     area: "Borracheiro",
     contato: "Paulo Borracharia da 40",

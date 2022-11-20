@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <div class="content items-center justify-center flex-col flex p-6 rounded-lg bg-stone-100 text-center">
   <button mat-raised-button class="bg-red-500 p-2 rounded-lg" (click)="openDialog()">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -5,9 +6,58 @@
     </svg>
   </button>
 
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="ArrumarCelular">
+      <th mat-header-cell *matHeaderCellDef> Contato </th>
+      <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Opcao">
+      <th mat-header-cell *matHeaderCellDef> Opção </th>
+      <td mat-cell *matCellDef="let element">
+
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <a (click)="openWhatsApp(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="mdi:whatsapp"></span>
+              WhatsApp
+            </a>
+          </button>
+
+          <button mat-menu-item>
+            <a (click)="openTelefone(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+              Telefone
+            </a>
+          </button>
+
+          <button mat-menu-item>
+            <a (click)="openMap(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+              Endereço
+            </a>
+          </button>
+
+        </mat-menu>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+
+
+
+
+
+
+
   <table mat-table [dataSource]="dataSource" multiTemplateDataRows>
   <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
-    <th mat-header-cell *matHeaderCellDef="let element" class="colun"> {{column}} </th>
+    <th mat-header-cell *matHeaderCellDef="let element" class="colun"> Arrumar Celular </th>
     <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
   </ng-container>
   <ng-container matColumnDef="expand">

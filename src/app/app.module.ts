@@ -12,6 +12,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MenuComponent } from './menu/menu.component';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 
 
@@ -33,6 +35,7 @@ import { MenuComponent } from './menu/menu.component';
     MatInputModule,
     MatSelectModule,
     MatAutocompleteModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
