@@ -27,7 +27,7 @@ export class AddNewContatoComponent implements OnInit {
 
     let mensagem = "Ola, gostaria de add um contato de " + categoria + " Nome: " + nome + " Numero: " + numero;
 
-    window.open('https://api.whatsapp.com/send?phone=5516999758986&text='+mensagem+'.');
+    window.open('https://api.whatsapp.com/send?phone=5516997955989&text='+mensagem+'.');
 
   }
 

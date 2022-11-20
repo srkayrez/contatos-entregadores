@@ -64,3 +64,34 @@ body
 {
   padding-bottom: 9em;
 }
+
+.content
+{
+  background-color: white;
+}
+
+.Menu
+{
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+}
+.grid-itens
+{
+  text-align: center;
+}
+.grid-itens:hover
+{
+  color:red
+}
+
+img
+{
+  width: 10%;
+  margin: 2em;
+}
