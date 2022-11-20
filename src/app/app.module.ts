@@ -9,13 +9,20 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddNewContatoComponent } from './add-new-contato/add-new-contato.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MenuComponent } from './menu/menu.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     AddNewContatoComponent,
-  ],
+      MenuComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,6 +31,8 @@ import { MatInputModule } from '@angular/material/input';
     MatGridListModule,
     MatDialogModule,
     MatInputModule,
+    MatSelectModule,
+    MatAutocompleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

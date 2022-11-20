@@ -1,19 +1,23 @@
+import { contatos } from './../list/model';
 import { Component, OnInit } from '@angular/core';
-
+import { contato } from '../list/data';
 
 @Component({
   selector: 'app-add-new-contato',
   templateUrl: './add-new-contato.component.html',
   styleUrls: ['./add-new-contato.component.css']
 })
+
 export class AddNewContatoComponent implements OnInit {
 
   mensagem: any
-
+  dataSource = contato
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
 
   enviarContato() {
 
@@ -26,6 +30,10 @@ export class AddNewContatoComponent implements OnInit {
     window.open('https://api.whatsapp.com/send?phone=5516999758986&text='+mensagem+'.');
 
   }
+
+
+
+
 
 
 }

@@ -1,5 +1,5 @@
-<div class="items-center justify-center flex-col flex p-6 rounded-lg bg-stone-100 text-center">
-  <button mat-raised-button class="bg-red-500 p-2 rounded-full" (click)="openDialog()">
+<div class="content items-center justify-center flex-col flex p-6 rounded-lg bg-stone-100 text-center">
+  <button mat-raised-button class="bg-red-500 p-2 rounded-lg" (click)="openDialog()">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </svg>
@@ -7,7 +7,7 @@
 
   <table mat-table [dataSource]="dataSource" multiTemplateDataRows>
   <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
-    <th mat-header-cell *matHeaderCellDef class="colun"> {{column}} </th>
+    <th mat-header-cell *matHeaderCellDef="let element" class="colun"> {{column}} </th>
     <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
   </ng-container>
   <ng-container matColumnDef="expand">
@@ -64,3 +64,6 @@
 </table>
 </div>
 
+<br>
+<br>
+<br>

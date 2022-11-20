@@ -54,3 +54,13 @@ tr.example-element-row:not(.example-expanded-row):active {
 .example-element-description-attribution {
   opacity: 0.5;
 }
+
+.colun
+{
+  text-align: center;
+}
+
+body
+{
+  padding-bottom: 9em;
+}
