@@ -82,14 +82,14 @@ export interface contatos {
 const ArrumarCelular : contatos[] = [
   {
     area: "Arrumar Celular",
-    contato: "Arrumar Celular A&R Assisstência 1",
+    contato: "A&R Assisstência e acessórios 1",
     telefone : 5516996417976,
     localizacao : "https://goo.gl/maps/cL7Sm4JoMv35GyGo7",
     temLocal : true
   },
   {
     area: "Arrumar Celular",
-    contato: "Arrumar Celular A&R Assisstência 2",
+    contato: "A&R Assisstência e acessórios 2",
     telefone : 5516982527178,
     localizacao : "https://goo.gl/maps/cL7Sm4JoMv35GyGo7",
     temLocal : true
