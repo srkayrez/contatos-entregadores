@@ -1,3 +1,4 @@
+import { contato } from './data';
 import { AddNewContatoComponent } from './../add-new-contato/add-new-contato.component';
 import { Component, OnInit, Output } from '@angular/core';
 import { animate, state, style, transition, trigger} from '@angular/animations';
@@ -65,6 +66,10 @@ export class ListComponent implements OnInit {
 
   openMap(element): void {
     window.open(element.localizacao)
+  }
+
+  reportContato(element): void {
+    window.open('https://api.whatsapp.com/send?phone=5516997955989&text=' + 'Gostaria de denunciar o contato ' + element.contato)
   }
 
 

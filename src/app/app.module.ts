@@ -13,6 +13,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { ReportContatoComponent } from './report-contato/report-contato.component';
 
 
 
@@ -24,6 +25,7 @@ import { MatMenuModule } from '@angular/material/menu';
     ListComponent,
     AddNewContatoComponent,
       MenuComponent,
+      ReportContatoComponent,
    ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { contatos } from './../list/model';
 import { Component, OnInit } from '@angular/core';
 import { contato } from '../list/data';
+import { DialogRef } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-add-new-contato',
@@ -12,7 +14,9 @@ export class AddNewContatoComponent implements OnInit {
 
   mensagem: any
   dataSource = contato
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<AddNewContatoComponent>,
+  ) { }
 
   ngOnInit(): void {
 
@@ -31,6 +35,9 @@ export class AddNewContatoComponent implements OnInit {
 
   }
 
+  closeModal():void {
+    this.dialogRef.close();
+  }
 
 
 
