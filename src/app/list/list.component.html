@@ -56,11 +56,219 @@
     <!-- ---------------------------- Borracheiro ---------------------------- -->
 
     <br>
-    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/4014654-breaking-broken-cell-drop-phone_112910%20(1).png?raw=true">
+    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/Pneu%20furado.png?raw=true">
     <h1>Borracheiro</h1>
     <br>
 
     <table mat-table [dataSource]="dataSource2">
+      <ng-container matColumnDef="ArrumarCelular">
+        <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Opcao">
+        <th mat-header-cell *matHeaderCellDef>
+          Oções
+        </th>
+        <td mat-cell *matCellDef="let element">
+
+          <button mat-button [matMenuTriggerFor]="menu">
+            <span class="material-icons">
+              more_horiz
+            </span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <a (click)="openWhatsApp(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="mdi:whatsapp"></span>
+                WhatsApp
+              </a>
+            </button>
+
+            <button mat-menu-item>
+              <a (click)="openTelefone(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+                Telefone
+              </a>
+            </button>
+
+            <button mat-menu-item *ngIf="element.temLocal">
+              <a (click)="openMap(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+                Endereço
+              </a>
+            </button>
+
+          </mat-menu>
+        </ng-container>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+
+
+    <!-- ---------------------------- Costureira ---------------------------- -->
+
+    <br>
+    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/Costura.png?raw=true">
+    <h1>Costureira</h1>
+    <br>
+
+    <table mat-table [dataSource]="dataCostura">
+      <ng-container matColumnDef="ArrumarCelular">
+        <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Opcao">
+        <th mat-header-cell *matHeaderCellDef>
+          Oções
+        </th>
+        <td mat-cell *matCellDef="let element">
+
+          <button mat-button [matMenuTriggerFor]="menu">
+            <span class="material-icons">
+              more_horiz
+            </span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <a (click)="openWhatsApp(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="mdi:whatsapp"></span>
+                WhatsApp
+              </a>
+            </button>
+
+            <button mat-menu-item>
+              <a (click)="openTelefone(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+                Telefone
+              </a>
+            </button>
+
+            <button mat-menu-item *ngIf="element.temLocal">
+              <a (click)="openMap(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+                Endereço
+              </a>
+            </button>
+
+          </mat-menu>
+        </ng-container>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+    <!-- ---------------------------- Arrumar Rodas ---------------------------- -->
+
+    <br>
+    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/Rodas.png?raw=true">
+    <h1>Arrumar Rodas</h1>
+    <br>
+
+    <table mat-table [dataSource]="dataRodas">
+      <ng-container matColumnDef="ArrumarCelular">
+        <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Opcao">
+        <th mat-header-cell *matHeaderCellDef>
+          Oções
+        </th>
+        <td mat-cell *matCellDef="let element">
+
+          <button mat-button [matMenuTriggerFor]="menu">
+            <span class="material-icons">
+              more_horiz
+            </span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <a (click)="openWhatsApp(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="mdi:whatsapp"></span>
+                WhatsApp
+              </a>
+            </button>
+
+            <button mat-menu-item>
+              <a (click)="openTelefone(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+                Telefone
+              </a>
+            </button>
+
+            <button mat-menu-item *ngIf="element.temLocal">
+              <a (click)="openMap(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+                Endereço
+              </a>
+            </button>
+
+          </mat-menu>
+        </ng-container>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+
+    <!-- ---------------------------- Guincho ---------------------------- -->
+
+    <br>
+    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/Moto%20reboque.png?raw=true">
+    <h1>Guincho</h1>
+    <br>
+
+    <table mat-table [dataSource]="dataGuincho">
+      <ng-container matColumnDef="ArrumarCelular">
+        <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Opcao">
+        <th mat-header-cell *matHeaderCellDef>
+          Oções
+        </th>
+        <td mat-cell *matCellDef="let element">
+
+          <button mat-button [matMenuTriggerFor]="menu">
+            <span class="material-icons">
+              more_horiz
+            </span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <a (click)="openWhatsApp(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="mdi:whatsapp"></span>
+                WhatsApp
+              </a>
+            </button>
+
+            <button mat-menu-item>
+              <a (click)="openTelefone(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+                Telefone
+              </a>
+            </button>
+
+            <button mat-menu-item *ngIf="element.temLocal">
+              <a (click)="openMap(element)">
+                <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+                Endereço
+              </a>
+            </button>
+
+          </mat-menu>
+        </ng-container>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+
+    <!-- ---------------------------- Lojas ---------------------------- -->
+
+    <br>
+    <img src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/Lojas.png?raw=true">
+    <h1>Lojas</h1>
+    <br>
+
+    <table mat-table [dataSource]="dataLojas">
       <ng-container matColumnDef="ArrumarCelular">
         <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
       </ng-container>
@@ -127,11 +335,3 @@
       </div>
     </div>
 
-
-
-
-
-
-<br>
-<br>
-<br>

@@ -23,6 +23,13 @@ export class ListComponent implements OnInit {
 
   dataSource = ArrumarCelular;
   dataSource2 = Borracheiro;
+  dataCostura = Costura;
+  dataRodas = Rodas;
+  dataGuincho = Guincho;
+  dataLojas= Lojas;
+
+
+
   columnsToDisplay = ['contato'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement: contatos | null;
@@ -177,6 +184,8 @@ const Costura: contatos[] =[
     localizacao : "https://goo.gl/maps/yhWF5sZNUyNnTJyTA",
     temLocal: true
   },
+]
+const Rodas : contatos[] = [
   {
     area: "Arrumar Rodas",
     contato: "Arrumar Rodas Gah Rodas",
@@ -184,6 +193,9 @@ const Costura: contatos[] =[
     localizacao : null,
     temLocal: false
   },
+]
+
+const Guincho : contatos[] =[
   {
     area: "Guincho",
     contato: "Cocada Guincho",
@@ -205,6 +217,9 @@ const Costura: contatos[] =[
     localizacao : null,
     temLocal: false
   },
+]
+
+const Lojas: contatos[] = [
   {
     area: "Lojas",
     contato: "Julio peças",
