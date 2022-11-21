@@ -91,8 +91,8 @@ const ArrumarCelular : contatos[] = [
     area: "Arrumar Celular",
     contato: "Arrumar Celular A&R Assisstência 2",
     telefone : 5516982527178,
-    localizacao : null,
-    temLocal : false
+    localizacao : "https://goo.gl/maps/cL7Sm4JoMv35GyGo7",
+    temLocal : true
   },
 ]
 
@@ -217,21 +217,26 @@ const Guincho : contatos[] =[
     localizacao : null,
     temLocal: false
   },
+  {
+    area: "Guincho",
+    contato: "Matheus Guincho",
+    telefone: 5516996364918,
+    temLocal: false
+  },
+  {
+    area: "Guincho",
+    contato: "Araraquara moto guincho",
+    telefone: 5516997907574,
+    temLocal: false
+  },
 ]
 
 const Lojas: contatos[] = [
   {
     area: "Lojas",
-    contato: "Julio peças",
-    telefone : 5516997465840,
-    localizacao : null,
-    temLocal: false
-  },
-  {
-    area: "Lojas",
-    contato: "Peças para moto",
-    telefone : 5516997611688,
-    localizacao : null,
+    contato: "Rafael Manguito",
+    telefone: 5516997555587,
+    localizacao: null,
     temLocal: false
   },
 ]
