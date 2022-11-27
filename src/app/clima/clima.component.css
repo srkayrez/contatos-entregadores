@@ -22,13 +22,13 @@
 
 body
 {
-  padding-bottom: 9em;
+  margin-bottom: 4em;
 }
 
 .content
 {
   background-color: white;
-  margin-bottom: 4em;
+  margin-bottom: 1.5em;
 }
 
 .Menu
@@ -44,6 +44,27 @@ body
   width: 100%;
 }
 
+.forecast{
+  justify-content: center;
+}
+
+ng-container{
+  display: inline-block;
+  justify-items: center;
+}
+
+span{
+  font-size: 24px;
+  justify-self: center;
+}
+
+i{
+  font-size: 24px;
+}
+
+p{
+  font-size: 24px;
+}
 
 
 .grid-itens

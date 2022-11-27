@@ -1,99 +1,130 @@
-<ng-template [dataSource]="dataSource"></ng-template>
-<div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
-  <p>Temperatura: {{dados.hourly.temperature_2m[0]}} ºC</p>
-  <p>Temperatura Máx: {{dados.daily.temperature_2m_max[0]}} ºC</p>
-  <p>Temperatura Min: {{dados.daily.temperature_2m_min[0]}} ºC</p>
 
-  <ng-component [ngSwitch]="dados.daily.weathercode[0]">
+<div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center" [ngSwitch]="dados2.current_weather.weathercode">
 
-    <ng-template *ngSwitchCase="0">
-      <p>Céu limpo</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="0">
+      <i class="fi fi-rr-sun"></i>
+      <span> Céu limpo</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="1">
-      <p>Principalmente limpo</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="1">
+      <i class="fi fi-rr-sun"></i>
+      <span> Principalmente limpo</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="2">
-      <p>Parcialmente nublado</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="2">
+      <i class="fi fi-rs-cloud-sun"></i>
+      <span style='font-size:24px'> Parcialmente nublado</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="3">
-      <p>Encoberto</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="3">
+      <i class="fi fi-rs-smoke"></i>
+      <span> Encoberto</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="45">
-      <p>Nevoeiro</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="45">
+      <i class="fi fi-rr-fog"></i>
+      <span> Nevoeiro</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="48">
-      <p>Geada com nevoeiro</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="48">
+      <i class="fi fi-rs-snow-blowing"></i>
+      <span> Geada com nevoeiro</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="51">
-      <p>Garoa leve</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="51">
+      <i class="fi fi-rr-cloud-hail"></i>
+      <span> Garoa leve</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="53">
-      <p>Garoa moderada</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="53">
+      <i class="fi fi-rr-cloud-drizzle"></i>
+      <span> Garoa moderada</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="55">
-      <p>Garoa Densa</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="55">
+      <i class="fi fi-rs-cloud-showers"></i>
+      <span> Garoa Densa</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="56">
-      <p>Garoa congelante leve</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="56">
+      <i class="fi fi-rr-cloud-sleet"></i>
+      <span> Garoa congelante leve</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="57">
-      <p>Garoa congelante densa</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="57">
+      <i class="fi fi-rr-cloud-sleet"></i>
+      <span> Garoa congelante densa</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="61">
-      <p>Chuva leve</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="61">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Chuva leve</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="63">
-      <p>Chuva moderada</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="63">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Chuva moderada</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="65">
-      <p>Chuva forte</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="65">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Chuva forte</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="66">
-      <p>Chuva congelante leve</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="66">
+      <i class="fi fi-rr-cloud-sleet"></i>
+      <span> Chuva congelante leve</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="67">
-      <p>Chuva congelada forte</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="67">
+      <i class="fi fi-rr-cloud-sleet"></i>
+      <span> Chuva congelante forte</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="80">
-      <p>Pancadas de chuvas leves</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="80">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Pancadas de chuvas leves</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="81">
-      <p>Pancadas de chuvas moderadas</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="81">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Pancadas de chuvas moderadas</span>
+    </ng-container>
 
-    <ng-template *ngSwitchCase="82">
-      <p>Pancadas de chuvas violentas</p>
-    </ng-template>
+    <ng-container *ngSwitchCase="82">
+      <i class="fi fi-rr-cloud-showers-heavy"></i>
+      <span> Pancadas de chuvas violentas</span>
+    </ng-container>
 
-  </ng-component>
+  </div>
 
+  <div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
+
+      <p style="color:rgb(0, 165, 165);" *ngIf="dados2.current_weather.temperature <= 20">
+        <i class="fi fi-rr-temperature-frigid"></i>
+        {{dados2.current_weather.temperature}} ºC
+      </p>
+      <p *ngIf="dados2.current_weather.temperature >= 20 && dados2.current_weather.temperature <= 28">
+        <i class="fi fi-rr-temperature-low"></i>
+        {{dados2.current_weather.temperature}} ºC
+      </p>
+      <p style="color: red;" *ngIf="dados2.current_weather.temperature > 28">
+        <i class="fi fi-rr-summer"></i>
+        {{dados2.current_weather.temperature}} ºC</p>
+
+
+    <p>Máx: {{dados2.daily.temperature_2m_max[0]}} ºC</p>
+    <p>Min: {{dados2.daily.temperature_2m_min[0]}} ºC</p>
+  </div>
 
   <!-- precipitationProbability -->
 
-</div>
 
 
-<div class="buttonNew">
-  <button mat-raised-button class="addButon" (click)="openDialog()">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+  <div class="buttonNew">
+    <button mat-raised-button class="addButon" (click)="openDialog()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </svg>
   </button>
 </div>

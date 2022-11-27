@@ -51,7 +51,8 @@ export class ClimaComponent implements OnInit {
     } catch (error) {
       this.carregando = false;
      }
-     this.api()
+     this.api();
+     this.api2();
     }
 
     api() {
@@ -59,6 +60,7 @@ export class ClimaComponent implements OnInit {
       .subscribe(
         data =>{
           this.dados = data;
+          console.log("api 1 air visual")
           console.log(this.dados);
         }
       );
@@ -69,6 +71,7 @@ export class ClimaComponent implements OnInit {
       .subscribe(
         data2 =>{
           this.dados2 = data2;
+          console.log("api 2 open meteor")
           console.log(this.dados2);
         }
       );

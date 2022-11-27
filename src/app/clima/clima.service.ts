@@ -11,7 +11,9 @@ constructor( public http : HttpClient ) { }
 buscarDados(latitude,longitude) {
   let lat = latitude;
   let long = longitude;
-  return this.http.get('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + long + '&hourly=temperature_2m,precipitation,temperature_80m,temperature_120m,temperature_180m&daily=weathercode,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,precipitation_hours&timezone=America%2FSao_Paulo')
+  return this.http.get(`https://api.airvisual.com/v2/nearest_city?lat=` + lat +
+  `&lon=` + long + `&key=b0769871-eefe-4837-8c64-7309c061b09e`);
+  // return this.http.get('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + long + '&hourly=temperature_2m,precipitation,temperature_80m,temperature_120m,temperature_180m&daily=weathercode,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,precipitation_hours&timezone=America%2FSao_Paulo')
   // return this.http.get('https://api.open-meteo.com/v1/forecast?latitude=-21.79&longitude=-48.18&hourly=temperature_2m,precipitation,rain,visibility')
 }
 
