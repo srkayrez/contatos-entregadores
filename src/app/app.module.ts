@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { ReportContatoComponent } from './report-contato/report-contato.component';
+import { ClimaComponent } from './clima/clima.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -26,6 +30,7 @@ import { ReportContatoComponent } from './report-contato/report-contato.componen
     AddNewContatoComponent,
       MenuComponent,
       ReportContatoComponent,
+      ClimaComponent
    ],
   imports: [
     BrowserModule,
@@ -38,6 +43,9 @@ import { ReportContatoComponent } from './report-contato/report-contato.componen
     MatSelectModule,
     MatAutocompleteModule,
     MatMenuModule,
+    routing,
+    HttpClientModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
