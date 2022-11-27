@@ -17,6 +17,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ReportContatoComponent } from './report-contato/report-contato.component';
 import { ClimaComponent } from './clima/clima.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InfoComponent } from './info/info.component';
+import { DownloadComponent } from './download/download.component';
 
 
 
@@ -24,13 +26,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     ListComponent,
     AddNewContatoComponent,
       MenuComponent,
       ReportContatoComponent,
-      ClimaComponent
+      ClimaComponent,
+      InfoComponent,
+      DownloadComponent
    ],
   imports: [
     BrowserModule,

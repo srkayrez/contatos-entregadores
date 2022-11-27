@@ -1,3 +1,7 @@
+<div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
+
+  <span>{{dados.data.city}} - {{dados.data.state}}</span>
+</div>
 
 <div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center" [ngSwitch]="dados2.current_weather.weathercode">
 
@@ -8,7 +12,7 @@
 
     <ng-container *ngSwitchCase="1">
       <i class="fi fi-rr-sun"></i>
-      <span> Principalmente limpo</span>
+      <span> Parcialmente limpo</span>
     </ng-container>
 
     <ng-container *ngSwitchCase="2">
@@ -112,7 +116,7 @@
         <i class="fi fi-rr-summer"></i>
         {{dados2.current_weather.temperature}} ºC</p>
 
-
+<br>
     <p>Máx: {{dados2.daily.temperature_2m_max[0]}} ºC</p>
     <p>Min: {{dados2.daily.temperature_2m_min[0]}} ºC</p>
   </div>
@@ -140,7 +144,7 @@
       </div>
 
       <div class="grid-itens">
-        <a>
+        <a routerLink="/download">
           <span class="material-icons">
             download
           </span>
@@ -148,7 +152,7 @@
       </div>
 
       <div class="grid-itens">
-        <a>
+        <a routerLink="/info">
           <span class="material-icons">
             info
           </span>
