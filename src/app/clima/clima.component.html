@@ -1,6 +1,7 @@
 <div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
 
   <span>{{dados.data.city}} - {{dados.data.state}}</span>
+
 </div>
 
 <div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center" [ngSwitch]="dados2.current_weather.weathercode">
@@ -16,12 +17,12 @@
     </ng-container>
 
     <ng-container *ngSwitchCase="2">
-      <i class="fi fi-rs-cloud-sun"></i>
+      <i class="fi fi-rr-cloud-sun"></i>
       <span style='font-size:24px'> Parcialmente nublado</span>
     </ng-container>
 
     <ng-container *ngSwitchCase="3">
-      <i class="fi fi-rs-smoke"></i>
+      <i class="fi fi-rr-clouds"></i>
       <span> Encoberto</span>
     </ng-container>
 
@@ -31,7 +32,7 @@
     </ng-container>
 
     <ng-container *ngSwitchCase="48">
-      <i class="fi fi-rs-snow-blowing"></i>
+      <i class="fi fi-rr-snowflake"></i>
       <span> Geada com nevoeiro</span>
     </ng-container>
 
@@ -46,7 +47,7 @@
     </ng-container>
 
     <ng-container *ngSwitchCase="55">
-      <i class="fi fi-rs-cloud-showers"></i>
+      <i class="fi fi-rr-cloud-drizzle"></i>
       <span> Garoa Densa</span>
     </ng-container>
 
@@ -108,11 +109,11 @@
         <i class="fi fi-rr-temperature-frigid"></i>
         {{dados2.current_weather.temperature}} ºC
       </p>
-      <p *ngIf="dados2.current_weather.temperature >= 20 && dados2.current_weather.temperature <= 28">
+      <p *ngIf="dados2.current_weather.temperature > 20 && dados2.current_weather.temperature < 28">
         <i class="fi fi-rr-temperature-low"></i>
         {{dados2.current_weather.temperature}} ºC
       </p>
-      <p style="color: red;" *ngIf="dados2.current_weather.temperature > 28">
+      <p style="color: red;" *ngIf="dados2.current_weather.temperature >= 28">
         <i class="fi fi-rr-summer"></i>
         {{dados2.current_weather.temperature}} ºC</p>
 
