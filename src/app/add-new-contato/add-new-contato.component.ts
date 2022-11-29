@@ -3,6 +3,7 @@ import { contatos } from './../list/model';
 import { Component, OnInit } from '@angular/core';
 import { contato } from '../list/data';
 import { DialogRef } from '@angular/cdk/dialog';
+import { category } from './DTOs/category.type';
 
 @Component({
   selector: 'app-add-new-contato',
@@ -14,6 +15,32 @@ export class AddNewContatoComponent implements OnInit {
 
   mensagem: any
   dataSource = contato
+
+  categories : category[] = [
+    {
+      name: 'Arrumar Celular'
+    },
+    {
+      name: 'Arrumar Rodas'
+    },
+    {
+      name: 'Borracheiro'
+    },
+    {
+      name: 'Costura'
+    },
+    {
+      name: 'Guincho'
+    },
+    {
+      name: 'Loja'
+    },
+    {
+      name: 'Outro'
+    },
+]
+  category: any;
+
   constructor(
     public dialogRef: MatDialogRef<AddNewContatoComponent>,
   ) { }
@@ -22,12 +49,17 @@ export class AddNewContatoComponent implements OnInit {
 
   }
 
+  getCategory(teste:string) {
+    this.category = teste
+    console.log(this.category)
+  }
+
 
   enviarContato() {
 
     let nome = (<HTMLInputElement>document.getElementById('nome')).value;
     let numero = (<HTMLInputElement>document.getElementById('numero')).value;
-    let categoria = (<HTMLInputElement>document.getElementById('categoria')).value;
+    let categoria = this.category
 
     let mensagem = "Ola, gostaria de add um contato de " + categoria + " Nome: " + nome + " Numero: " + numero;
 
