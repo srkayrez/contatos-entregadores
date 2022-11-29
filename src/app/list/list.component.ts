@@ -30,6 +30,7 @@ export class ListComponent implements OnInit {
   dataLojas= Lojas;
 
 
+
   columnsToDisplay = ['contato'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement: contatos | null;

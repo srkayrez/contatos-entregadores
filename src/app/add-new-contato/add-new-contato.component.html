@@ -9,11 +9,21 @@
     <input id="numero" autocomplete="off" matInput placeholder="Ex. 16 9 9999-9999">
   </mat-form-field>
 
-  <mat-form-field id="categoria" appearance="fill">
+  <mat-form-field appearance="fill">
     <mat-label>Selecione a area</mat-label>
-    <mat-select (selectionChange)="getCategoryValue($event.value)" disableRipple>
-      <mat-option *ngFor="let teste of categories">{{teste.category}}</mat-option>
+    <mat-select disableRipple>
+      <mat-option value="Arrumar Celular">Arrumar Celular</mat-option>
+      <mat-option value="Borracheiro">Borracheiro</mat-option>
+      <mat-option value="Guincho">Guincho</mat-option>
+      <mat-option value="Costura">Costura</mat-option>
+      <mat-option value="Arrumar Rodas">Arrumar Rodas</mat-option>
+      <mat-option value="Guincho">Guincho</mat-option>
     </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="rounded-full" appearance="fill">
+    <mat-label> categoria </mat-label>
+    <input id="categoria" autocomplete="off" matInput placeholder="Ex. Borracharia">
   </mat-form-field>
 
   <button (click)="enviarContato()" id="btn" mat-raised-button class="bg-red-500 p-2 rounded-lg float-right">Enviar</button>
