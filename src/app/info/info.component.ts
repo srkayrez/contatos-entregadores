@@ -1,16 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.component';
+import { MatSnackBar, MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarConfig  } from '@angular/material/snack-bar';
+
+
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
-  styleUrls: ['./info.component.css']
+  styleUrls: ['./info.component.css'],
+  providers:[
+  {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}
+  ]
 })
 export class InfoComponent implements OnInit {
   contatos: any;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    public dialog: MatDialog,
+    private _snackBar: MatSnackBar,
+    ) { }
+
+
+    openSnackBar(message: string, action: string) {
+      this._snackBar.open(message, action, {
+        duration: 40000,
+        panelClass: "success-dialog"
+    });
+    }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(AddNewContatoComponent, {
@@ -33,6 +50,8 @@ export class InfoComponent implements OnInit {
       document.removeEventListener('copy', null);
     });
     document.execCommand("copy")
+
+    this.openSnackBar('Chave pix copiada com sucesso','Ok')
 
   }
 

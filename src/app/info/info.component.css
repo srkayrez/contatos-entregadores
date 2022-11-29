@@ -27,7 +27,7 @@
   position: fixed;
   bottom: 0;
   left: 50vw;
-  margin-left: -1.5em ;
+  margin-left: -1.7em ;
   margin-bottom: 2em;
   z-index: 1;
   display: inline-flex;
@@ -68,3 +68,4 @@ p{
   border-radius: 10px;
   padding: 0.5em;
 }
+

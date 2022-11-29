@@ -19,6 +19,7 @@ import { ClimaComponent } from './clima/clima.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InfoComponent } from './info/info.component';
 import { DownloadComponent } from './download/download.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -26,7 +27,7 @@ import { DownloadComponent } from './download/download.component';
 
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     ListComponent,
     AddNewContatoComponent,
@@ -50,6 +51,7 @@ import { DownloadComponent } from './download/download.component';
     routing,
     HttpClientModule,
     MatTableModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
