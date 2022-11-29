@@ -24,6 +24,18 @@ export class InfoComponent implements OnInit {
     });
   }
 
+  copy(): void {
+    let valueToCopy = '45de5eb2-f00b-4001-a8ef-77ce05a03951'
+
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (valueToCopy));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand("copy")
+
+  }
+
   ngOnInit() {
   }
 

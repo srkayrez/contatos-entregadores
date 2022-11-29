@@ -1,7 +1,7 @@
 .content
 {
   background-color: white;
-  margin-bottom: 4em;
+  margin-bottom: 1.5em;
 }
 
 .Menu
@@ -43,4 +43,28 @@
 .grid-itens:hover
 {
   color:red
+}
+
+a{
+  cursor: pointer;
+}
+
+
+i
+{
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em;
+}
+
+p{
+  font-size: 20px;
+}
+
+.pix{
+  text-align: center;
+  color:white;
+  background-color: red;
+  border-radius: 10px;
+  padding: 0.5em;
 }
