@@ -9,10 +9,12 @@ import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.compo
 })
 export class DownloadComponent implements OnInit {
   contatos: any;
+  temp: number;
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+    this.temp = 19;
   }
 
   openDialog(): void {
