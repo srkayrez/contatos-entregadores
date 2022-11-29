@@ -23,6 +23,7 @@ export class ClimaComponent implements OnInit {
 
   carregando: boolean;
   dados2: any;
+  contatos: any;
 
 
   constructor(
@@ -86,7 +87,7 @@ export class ClimaComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-
+      this.contatos = result;
     });
   }
 
