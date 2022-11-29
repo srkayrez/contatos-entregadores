@@ -31,7 +31,6 @@
   margin-bottom: 2em;
   z-index: 1;
   display: inline-flex;
-
   float: right;
 }
 
@@ -48,4 +47,5 @@
 iframe
 {
   height: 45vh;
+  width: auto;
 }

@@ -52,7 +52,6 @@ export class InfoComponent implements OnInit {
     document.execCommand("copy")
 
     this.openSnackBar('Chave pix copiada com sucesso','Ok')
-
   }
 
   ngOnInit() {
