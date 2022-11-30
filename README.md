@@ -83,4 +83,19 @@ Quando precionado mostra algumas funcionalidades, dentro delas:
 
 Dentre as opções, a unica que não aparece em todos os contatos é a de endereço, que só aparece nos contatos que possuem endereço.
 
-![Mostrar botao whatsapp](https://user-images.githubusercontent.com/78885438/204792721-edf37f6d-8751-4228-bdf4-95f5ec79c637.gif)
+## Botão Whatsapp:
+
+![Botão Wathsapp](https://user-images.githubusercontent.com/78885438/204802827-ad7400e9-4d76-4ced-8470-5a36aad14cf2.gif)
+
+## Botão Telefone:
+
+![Botao Telefone (1)](https://user-images.githubusercontent.com/78885438/204807620-8d066a9f-dcb9-46f4-91d5-db7df893a8b0.gif)
+
+## Botão Endereço:
+
+![Botao mapa](https://user-images.githubusercontent.com/78885438/204807824-05b87225-e6e1-41a7-97ad-470b5541cc3e.gif)
+
+## Bootão Reportar
+
+![Botão reportar(1)](https://user-images.githubusercontent.com/78885438/204808236-e9438eb7-6697-4f48-98aa-1feb7eaa8a12.gif)
+
