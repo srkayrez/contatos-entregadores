@@ -1,6 +1,6 @@
 # Portal do entregador
 
-Projeto feito desde 2019, anteriormente, via google sites <a href="https://sites.google.com/view/contatos-ifood" target="_blank">aqui</a>. em 2022 foquei mais nos estudos de front end e comecei a por em pratica, esse projeto foi feito para estudos e fixação de conteudos.
+Projeto feito desde 2019, anteriormente, via google sites <a href="https://sites.google.com/view/contatos-ifood" target="_blank">aqui</a>. em 2022 foquei mais nos estudos de front end e comecei a pôr em prática, esse projeto foi feito para estudos e fixação de conteúdos.
 
 ## Tecnologias utilizadas: 
 
@@ -32,7 +32,7 @@ Projeto feito desde 2019, anteriormente, via google sites <a href="https://sites
   <li>IQAIR Air quality API <a href="https://www.iqair.com/commercial/air-quality-monitors/airvisual-platform/api">Acesso aqui</a></li>
 </ul>
 
-## Icones e fontes:
+## Ícones e fontes:
 
 <ul>
   <li>Google Fontes <a href="https://fonts.google.com/icons">Acesso aqui</a></li>
@@ -40,18 +40,18 @@ Projeto feito desde 2019, anteriormente, via google sites <a href="https://sites
   <li>flaticon <a href="https://www.flaticon.com/icon-fonts-most-downloaded">Acesso aqui</a></li>
 </ul>
 
-# Ojetvio do site:
+# Objetivo do site:
 
-O site foi criado inicialmente enquanto eu era entregador para ser uma Agenda de contatos uteis para os entregadores de facil acesso e compartilhamento, de inicio ele era hospedado e gerenciado pela plataforma <a href="https://sites.google.com/new">GOOGLE SITES</a>. O modelo do site antigo ainda esta no ar e pode ser acessado por <a href="https://sites.google.com/view/contatos-ifood">Aqui</a>!
+O site foi criado inicialmente enquanto eu era entregador para ser uma Agenda de contatos úteis para os entregadores de fácil acesso e compartilhamento, de início ele era hospedado e gerenciado pela plataforma <a href="https://sites.google.com/new">GOOGLE SITES</a>. O modelo do site antigo ainda está no ar e pode ser acessado por <a href="https://sites.google.com/view/contatos-ifood">Aqui</a>!
 
-Em função de estudos, iniciei o desenvolvimento da migraçao de plataformas e decidi ser mais que uma agenda de contatos!
+Em função de estudos, iniciei o desenvolvimento da migração de plataformas e decidi ser mais que uma agenda de contatos!
 
 # O site
 
-## Tela inicial
+## Página 1 Contatos
 
-Na tela inicial podemos encontrar o cabeçalho (presente em todas as outras telas) com um botao que leva ao grupo dos entregadores de araraquara.
-Logo a baixo, encontramos os cards de separação dos contatos.
+Na tela inicial podemos encontrar o cabeçalho (presente em todas as outras telas) com um botão que leva ao grupo dos entregadores de araraquara.
+Logo abaixo, encontramos os cartões de separação dos contatos.
 
 Os contatos estão separados em:
 
@@ -70,7 +70,7 @@ Em todos os contatos temos um botão de ações localizado logo após o nome do 
 
 ![image](https://user-images.githubusercontent.com/78885438/204790343-38acd131-3928-4574-87da-378b99709166.png)
 
-Quando precionado mostra algumas funcionalidades, dentro delas:
+Quando pressionado mostra algumas funcionalidades, dentro delas:
 
 <ul>
   <li>WhatsApp</li>
@@ -81,7 +81,7 @@ Quando precionado mostra algumas funcionalidades, dentro delas:
 
 ![image](https://user-images.githubusercontent.com/78885438/204790686-21582411-837a-473c-9c06-8ad5af2f71f9.png)
 
-Dentre as opções, a unica que não aparece em todos os contatos é a de endereço, que só aparece nos contatos que possuem endereço.
+Dentre as opções, a única que não aparece em todos os contatos é a de endereço, que só aparece nos contatos que possuem endereço.
 
 ## Botão Whatsapp:
 
@@ -101,18 +101,60 @@ Dentre as opções, a unica que não aparece em todos os contatos é a de endere
 
 ## Botão Adicionar 
 
-* Por enquanto o numero é tratado como uma string, futuramente vai ser tratado como number e tera uma mascara para numero de telefone!
+* Por enquanto o número é tratado como uma string, futuramente vai ser tratado como número e terá uma máscara para número de telefone!
+
 ![Botão new (1)](https://user-images.githubusercontent.com/78885438/204813797-b73cabfb-1780-4523-8c01-8dce414388a4.gif)
 
-# Tela 2 Downloads
+# Página 2 Downloads
 
 Essa tela existe pois, uma requisição recorrente dos entregadores é encontrar versões anteriores do app do Ifood entregador, pois em diversas atualizações vem com bugs que atrapalham o serviço dos entregadores.
 
 * Ultilizo um iframe do site <a href="https://br.aptoide.com/">Aptoide</a>.
-* Tentei procurar alguma API publica para implementar mas não encontrei nada, então a solucão foi usar um Iframe incorporando todo o site do Aptoide na minha aplicação.
+* Tentei procurar alguma API pública para implementar mas não encontrei nada, então a solução foi usar um Iframe incorporando todo o site do Aptoide na minha aplicação.
 
 ![Screen_Recording_20221130_105654_Chrome](https://user-images.githubusercontent.com/78885438/204822210-e371110e-a9fa-4ee8-a5c0-60475af70c06.gif)
 
+# Página 3 Informações:
 
+Nessa tela eu coloquei dados e informações sobre o desenvolvedor do site, no caso, eu.
 
+<ul>
+  <li>Whatsapp</li>
+  <li>Instagran</li>
+  <li>Linkedin</li>
+  <li>GitHub<li>
+  <li>E-mail</li>
+</ul>
 
+Possui também uma parte dedicada a doação, para quem, se quiser, doar e ajudar a manter o site, por enquanto está rodando no gh pages, mas futuramente terá um domínio próprio!
+
+![pagina info](https://user-images.githubusercontent.com/78885438/204837924-fed7beca-c414-4f95-bdd6-00ede8d132d2.gif)
+
+# Página 4 Previsão do tempo.
+
+Página posta para auxiliar os entregadores com o clima atual, usando a localização atual como base.
+<ul>
+  <li>Objetivo principal da página era aprender sobre o consumo e tratamento de API's</li>
+</ul>
+
+![Screen_Recording_20221130_122854_Chrome](https://user-images.githubusercontent.com/78885438/204839718-c685c408-dd3b-474f-ba11-d62063038013.gif)
+
+Possui tratamento de tipos de clima:
+
+![image](https://user-images.githubusercontent.com/78885438/204841662-677ffc38-8805-4d94-a7f1-a254b0423bc8.png)
+
+Possui tratamento de temperatura:
+
+<ul>
+  <li>Azul <= 20</li>
+  <li>Preto de 21 a < 28</li>
+  <li>Vermelho > 28</li>
+</ul>
+
+![image](https://user-images.githubusercontent.com/78885438/204840708-e1d08148-1d83-4034-9511-230fd1d880fa.png)
+
+# Lembrete:
+
+Site ainda está sendo desenvolvido, Terá várias alterações ainda!
+
+Atualizado dia: <i>30/11/22</i>
