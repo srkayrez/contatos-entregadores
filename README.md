@@ -95,7 +95,24 @@ Dentre as opções, a unica que não aparece em todos os contatos é a de endere
 
 ![Botao mapa](https://user-images.githubusercontent.com/78885438/204807824-05b87225-e6e1-41a7-97ad-470b5541cc3e.gif)
 
-## Bootão Reportar
+## Botão Reportar
 
 ![Botão reportar(1)](https://user-images.githubusercontent.com/78885438/204808236-e9438eb7-6697-4f48-98aa-1feb7eaa8a12.gif)
+
+## Botão Adicionar 
+
+* Por enquanto o numero é tratado como uma string, futuramente vai ser tratado como number e tera uma mascara para numero de telefone!
+![Botão new (1)](https://user-images.githubusercontent.com/78885438/204813797-b73cabfb-1780-4523-8c01-8dce414388a4.gif)
+
+# Tela 2 Downloads
+
+Essa tela existe pois, uma requisição recorrente dos entregadores é encontrar versões anteriores do app do Ifood entregador, pois em diversas atualizações vem com bugs que atrapalham o serviço dos entregadores.
+
+* Ultilizo um iframe do site <a href="https://br.aptoide.com/">Aptoide</a>.
+* Tentei procurar alguma API publica para implementar mas não encontrei nada, então a solucão foi usar um Iframe incorporando todo o site do Aptoide na minha aplicação.
+
+![Screen_Recording_20221130_105654_Chrome](https://user-images.githubusercontent.com/78885438/204822210-e371110e-a9fa-4ee8-a5c0-60475af70c06.gif)
+
+
+
 
