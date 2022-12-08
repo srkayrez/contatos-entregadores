@@ -2,15 +2,14 @@
 {
   position: fixed;
   bottom: 0;
-  /* right: 0; */
+  text-align: center;
   background-color: white;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
   align-items: center;
-  width: 100%;
-  position: fixed;
-  left: 0;
+  width: 400px;
+  /* left: 0; */
 }
 
 .buttonNew

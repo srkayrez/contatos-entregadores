@@ -9,7 +9,6 @@ import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.compo
 })
 export class MenuComponent implements OnInit {
 
-
   contatos: any;
 
   constructor(public dialog: MatDialog) { }
