@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.component';
 
@@ -7,9 +7,12 @@ import { AddNewContatoComponent } from '../add-new-contato/add-new-contato.compo
   templateUrl: './download.component.html',
   styleUrls: ['./download.component.css']
 })
+
 export class DownloadComponent implements OnInit {
   contatos: any;
   temp: number;
+
+  @Output() menu: number =2
 
   constructor(public dialog: MatDialog) { }
 

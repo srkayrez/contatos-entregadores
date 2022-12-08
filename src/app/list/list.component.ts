@@ -1,6 +1,6 @@
 import { contato } from './data';
 import { AddNewContatoComponent } from './../add-new-contato/add-new-contato.component';
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { animate, state, style, transition, trigger} from '@angular/animations';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -36,10 +36,12 @@ export class ListComponent implements OnInit {
   expandedElement: contatos | null;
   contatos: any;
 
-  @Output() menu: number = 1;
 
 
     constructor(public dialog: MatDialog) {}
+
+    ngOnInit(): void {
+    }
 
     openDialog(): void {
       const dialogRef = this.dialog.open(AddNewContatoComponent, {
@@ -53,8 +55,6 @@ export class ListComponent implements OnInit {
       });
     }
 
-  ngOnInit(): void {
-  }
 
   openWhatsApp(element): void {
     window.open('https://wa.me/' + element.telefone)

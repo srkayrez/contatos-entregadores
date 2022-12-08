@@ -5,7 +5,8 @@
   <img alt="Imagem de um celular quebrado" src="https://github.com/srkayrez/contatos-entregadores/blob/master/src/assets/4014654-breaking-broken-cell-drop-phone_112910%20(1).png?raw=true">
     <h1>Arrumar celular e acessórios</h1>
   <br>
-  <table mat-table [dataSource]="dataSource">
+
+  <table color="primary" mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="ArrumarCelular">
       <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
     </ng-container>
@@ -354,53 +355,3 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
       </div>
-
-
-    <!-- ---------------------------- Menu ---------------------------- -->
-<div class="buttonNew">
-  <button mat-raised-button class="addButon" (click)="openDialog()">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-    </svg>
-  </button>
-</div>
-
-    <div class="Menu">
-
-      <div class="grid-itens" style="color: red">
-        <a>
-          <span class="material-icons">
-           home
-         </span>
-        </a>
-      </div>
-
-      <div class="grid-itens">
-        <a routerLink="/download">
-          <span class="material-icons">
-            download
-          </span>
-        </a>
-      </div>
-
-      <div class="grid-itens">
-        <a routerLink="/info">
-          <span class="material-icons">
-            info
-          </span>
-        </a>
-
-      </div>
-
-      <div class="grid-itens">
-        <a routerLink="/clima">
-          <span class="material-icons">
-            sunny_snowing
-          </span>
-        </a>
-      </div>
-    </div>
-
-
-
-

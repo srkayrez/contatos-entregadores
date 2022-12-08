@@ -17,11 +17,11 @@ tr.example-detail-row {
 }
 
 tr.example-element-row:not(.example-expanded-row):hover {
-  background: whitesmoke;
+  background: white;
 }
 
 tr.example-element-row:not(.example-expanded-row):active {
-  background: #efefef;
+  background: white;
 }
 
 .example-element-row td {
@@ -76,7 +76,7 @@ body
   margin-bottom: 4em;
 }
 
-.Menu
+/* .Menu
 {
   position: fixed;
   bottom: 0;
@@ -87,7 +87,7 @@ body
   padding: 10px;
   align-items: center;
   width: 100%;
-}
+} */
 
 
 
@@ -106,7 +106,7 @@ img
   margin: 2em;
 }
 
-.buttonNew
+/* .buttonNew
 {
   text-align: center;
   color:white;
@@ -122,4 +122,4 @@ img
   display: inline-flex;
 
   float: right;
-}
+} */

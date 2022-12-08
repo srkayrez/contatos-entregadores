@@ -1,19 +1,43 @@
-<div class="Menu">
-  <div class="grid-itens">
-    <a>
-      <span class="material-icons">
-        sunny_snowing
-      </span>
-    </a>
-  </div>
-  <div class="grid-itens">
-    <span  class="material-icons">
-      home
-    </span>
-  </div>
-  <div class="grid-itens">
-    <span class="material-icons">
-      add_ic_call
-    </span>
-  </div>
+<div class="buttonNew">
+  <button mat-raised-button class="addButon" (click)="openDialog()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+    </svg>
+  </button>
 </div>
+
+    <div class="Menu">
+
+      <div id="List" class="grid-itens">
+        <a routerLink="" (click)="list()">
+          <span class="material-icons">
+           home
+         </span>
+        </a>
+      </div>
+
+      <div id="Download" class="grid-itens">
+        <a routerLink="/download" (click)="download()">
+          <span class="material-icons">
+            download
+          </span>
+        </a>
+      </div>
+
+      <div id="Info" class="grid-itens">
+        <a routerLink="/info" (click)="info()">
+          <span class="material-icons">
+            info
+          </span>
+        </a>
+
+      </div>
+
+      <div id="Clima" class="grid-itens">
+        <a routerLink="/clima" (click)="clima()">
+          <span class="material-icons">
+            sunny_snowing
+          </span>
+        </a>
+      </div>
+    </div>
