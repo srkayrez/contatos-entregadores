@@ -2,6 +2,8 @@
 
 Projeto feito desde 2019, anteriormente, via google sites <a href="https://sites.google.com/view/contatos-ifood" target="_blank">aqui</a>. em 2022 foquei mais nos estudos de front end e comecei a pôr em prática, esse projeto foi feito para estudos e fixação de conteúdos.
 
+Novo site pode ser acessado <a href='https://srkayrez.github.io/contatos-entregadores/'>aqui</a>
+
 ## Tecnologias utilizadas: 
 
 <div style="display: inline-block">
