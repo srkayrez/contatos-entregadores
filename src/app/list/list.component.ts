@@ -104,6 +104,20 @@ const ArrumarCelular : contatos[] = [
 const Borracheiro : contatos[]=[
   {
     area: "Borracheiro",
+    contato: "Zomax 1",
+    telefone : 5516997684242,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
+    contato: "Zomax 2",
+    telefone : 5516981227036,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
     contato: "Paulo Borracharia da 40",
     telefone : 5516988565764,
     localizacao : null,
