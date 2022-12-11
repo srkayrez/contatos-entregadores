@@ -16,6 +16,10 @@ import { MatSnackBar, MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarConfig  } from '
 export class InfoComponent implements OnInit {
   contatos: any;
 
+  dataSource = Parceiros
+
+  displayedColumns: string[] = ['Parceiros','Opcao'];
+
   constructor(
     public dialog: MatDialog,
     private _snackBar: MatSnackBar,
@@ -57,4 +61,48 @@ export class InfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  openWhatsApp(element): void {
+    window.open('https://wa.me/' + element.telefone)
+  }
+
+  openTelefone(element): void {
+    window.open('tel:' + element.telefone);
+  }
+
+  openMap(element): void {
+    window.open(element.localizacao)
+  }
+
+  reportContato(element): void {
+    window.open('https://api.whatsapp.com/send?phone=5516997955989&text=' + 'Gostaria de denunciar o contato ' + element.contato)
+  }
 }
+
+  export interface contatoespecial {
+    area : string,
+    contato : string,
+    telefone : number,
+    telefone2 : number,
+    localizacao ?: string,
+    temLocal : boolean,
+  }
+
+  const Parceiros : contatoespecial[] = [
+    {
+      area: "Parceiros",
+      contato: "Disk Água Pura",
+      telefone : 1633334212,
+      telefone2 : 1633371925,
+      localizacao : "https://goo.gl/maps/FxsehrWH4zCAyVRaA",
+      temLocal : true
+    },
+    {
+      area: "Parceiros",
+      contato: "A&R Assisstência e acessórios",
+      telefone : 5516996417976,
+      telefone2 : 5516982527178,
+      localizacao : "https://goo.gl/maps/cL7Sm4JoMv35GyGo7",
+      temLocal : true
+    },
+  ]
+

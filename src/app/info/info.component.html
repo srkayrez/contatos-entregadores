@@ -1,6 +1,62 @@
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-<div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
+<div class="content items-center justify-center flex-col flex p-6 rounded-lg bg-white text-center mb-">
 
+  <h1>Lojas parceiras</h1>
+
+  <table color="primary" mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="Parceiros">
+      <td mat-cell *matCellDef="let element"> {{element.contato}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Opcao">
+      <th mat-header-cell *matHeaderCellDef>
+        Oções
+      </th>
+      <td mat-cell *matCellDef="let element">
+
+        <button mat-button [matMenuTriggerFor]="menu">
+          <span class="material-icons">
+            more_horiz
+          </span>
+        </button>
+        <mat-menu #menu="matMenu">
+
+          <button mat-menu-item>
+            <a (click)="openTelefone(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+              Telefone 1
+            </a>
+          </button>
+
+          <button mat-menu-item>
+            <a (click)="openTelefone(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="material-symbols:call-outline"></span>
+              Telefone 2
+            </a>
+          </button>
+
+          <button mat-menu-item *ngIf="element.temLocal">
+            <a (click)="openMap(element)">
+              <span style="display: inline-block ;" class="iconify" data-icon="ph:map-pin"></span>
+              Endereço
+            </a>
+          </button>
+
+          <button style="color:red;" mat-menu-item>
+            <a (click)="reportContato(element)">
+              <span style="display: inline-block;" class="iconify" data-icon="ic:baseline-report-gmailerrorred"></span>
+              Reportar
+            </a>
+          </button>
+
+        </mat-menu>
+      </ng-container>
+
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+
+  <div class="content items-center justify-center flex-col flex p-6 rounded-lg text-center">
   <h1>Site desenvolvido por:</h1>
   <p>João Victor Caires</p>
   <section class="socialMedia">
