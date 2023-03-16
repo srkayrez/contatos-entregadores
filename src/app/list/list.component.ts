@@ -104,6 +104,27 @@ const ArrumarCelular : contatos[] = [
 const Borracheiro : contatos[]=[
   {
     area: "Borracheiro",
+    contato: "Borracharia Movel 1",
+    telefone : 5516996205161,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
+    contato: "Borracharia Movel 2",
+    telefone : 5516996377337,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
+    contato: "Borracheiro Indaia 24h",
+    telefone : 5516996186254,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
     contato: "Zomax 1",
     telefone : 5516997684242,
     localizacao : null,
@@ -134,20 +155,6 @@ const Borracheiro : contatos[]=[
     area: "Borracheiro",
     contato: "Rodrigo Borracheiro",
     telefone : 5516997784732,
-    localizacao : null,
-    temLocal: false
-  },
-  {
-    area: "Borracheiro",
-    contato: "Edson Borracheiro",
-    telefone : 5516996377337,
-    localizacao : null,
-    temLocal: false
-  },
-  {
-    area: "Borracheiro",
-    contato: "Edson Borracheiro 2",
-    telefone : 5516988206629,
     localizacao : null,
     temLocal: false
   },
