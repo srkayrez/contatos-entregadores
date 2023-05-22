@@ -272,5 +272,4 @@ const Lojas: contatos[] = [
     localizacao: null,
     temLocal: false
   },
-
 ]
