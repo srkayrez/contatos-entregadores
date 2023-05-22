@@ -265,4 +265,12 @@ const Lojas: contatos[] = [
     localizacao: null,
     temLocal: false
   },
+{
+    area: "Lojas",
+    contato: "teste",
+    telefone: 5516997555587,
+    localizacao: null,
+    temLocal: false
+  },
+
 ]
