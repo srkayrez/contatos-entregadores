@@ -158,4 +158,4 @@ Possui tratamento de temperatura:
 
 Site ainda está sendo desenvolvido, Terá várias alterações ainda!
 
-Atualizado dia: <i>30/11/22</i>
+Atualizado dia: <i>25/05/23</i>
