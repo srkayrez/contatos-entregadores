@@ -222,6 +222,12 @@ const Rodas : contatos[] = [
 ]
 
 const Guincho : contatos[] =[
+{
+    area: "Guincho",
+    contato: "Anésio",
+    telefone: 5516997662752,
+    temLocal: false
+  },
   {
     area: "Guincho",
     contato: "Cocada Guincho",
@@ -255,6 +261,8 @@ const Guincho : contatos[] =[
     telefone: 5516997907574,
     temLocal: false
   },
+
+ 
 ]
 
 const Lojas: contatos[] = [
