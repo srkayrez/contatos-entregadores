@@ -44,3 +44,41 @@
   color:red
 }
 
+.image-container{
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding:1em 1em 0em 1em;
+
+    position: relative;
+  display: inline-block;
+}
+
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover::before {
+    opacity: 1;
+  }
+  
+  .image-container:hover #imagem {
+    opacity: 0.5; /* opcional: reduzir a opacidade da imagem durante o hover */
+  }
+
+  .image-container:hover #imagem2 {
+    opacity: 0.5; /* opcional: reduzir a opacidade da imagem durante o hover */
+  }
+  
+  #icone{
+    margin-right: 2em;
+  }
+
+ 
