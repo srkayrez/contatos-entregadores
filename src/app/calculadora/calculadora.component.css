@@ -1,0 +1,46 @@
+.content
+{
+  background-color: white;
+  margin-bottom: 4em;
+}
+
+.Menu
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonNew
+{
+  text-align: center;
+  color:white;
+  background-color: red;
+  border-radius: 100%;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 50vw;
+  margin-left: -1.7em ;
+  margin-bottom: 2em;
+  z-index: 1;
+  display: inline-flex;
+  float: right;
+}
+
+
+.grid-itens
+{
+  text-align: center;
+}
+.grid-itens:hover
+{
+  color:red
+}
+
