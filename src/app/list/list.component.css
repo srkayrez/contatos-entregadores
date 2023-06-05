@@ -72,9 +72,6 @@ body
   margin-bottom: 1.5em;
 }
 
-#ultimo{
-  margin-bottom: 4em;
-}
 
 /* .Menu
 {
@@ -123,3 +120,21 @@ img
 
   float: right;
 } */
+
+@media (min-width:700px){
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
+    padding-bottom: 3em;
+  }  
+}
+
+@media (min-width:1200px){
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2em;
+    padding-bottom: 3em;
+  }
+}
