@@ -37,8 +37,4 @@
   color:red
 }
 
-@media (min-width: 400px) {
-  .Menu{
-    width: 100vw;
-  }
 }
