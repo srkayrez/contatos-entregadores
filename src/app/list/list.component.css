@@ -127,7 +127,7 @@ img
     grid-template-columns: 1fr 1fr;
     gap:2em;
     padding-bottom: 3em;
-    width: 100vw;
+    
   }  
 }
 
@@ -137,6 +137,6 @@ img
     grid-template-columns: 1fr 1fr 1fr;
     gap:2em;
     padding-bottom: 3em;
-    width: 100vw;
+   
   }
 }
