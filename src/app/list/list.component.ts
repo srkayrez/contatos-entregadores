@@ -104,7 +104,7 @@ const ArrumarCelular : contatos[] = [
 const Borracheiro : contatos[]=[
   {
     area: "Borracheiro",
-    contato: "Borracharia Movel 1",
+    contato: "Daniel",
     telefone : 5516996205161,
     localizacao : null,
     temLocal: false
