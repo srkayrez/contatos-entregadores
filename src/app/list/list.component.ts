@@ -212,6 +212,13 @@ const Costura: contatos[] =[
   },
 ]
 const Rodas : contatos[] = [
+ {
+    area: "Arrumar Rodas",
+    contato: "Fabiano rodas",
+    telefone : 5516991028660,
+    localizacao : null,
+    temLocal: false
+  },
   {
     area: "Arrumar Rodas",
     contato: "Arrumar Rodas Gah Rodas",
