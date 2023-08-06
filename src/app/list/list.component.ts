@@ -88,7 +88,7 @@ const ArrumarCelular : contatos[] = [
 {
     area: "Arrumar Celular",
     contato: "KF Assistec",
-    telefone : 55169962285311,
+    telefone : 5516996285311,
     localizacao : "https://maps.app.goo.gl/DGcEDdGUuvFFtPYV9",
     temLocal : true
   },
