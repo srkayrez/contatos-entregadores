@@ -85,6 +85,13 @@ export interface contatos {
 
 
 const ArrumarCelular : contatos[] = [
+{
+    area: "Arrumar Celular",
+    contato: "KF Assistec",
+    telefone : 55169962285311,
+    localizacao : "https://maps.app.goo.gl/DGcEDdGUuvFFtPYV9",
+    temLocal : true
+  },
   {
     area: "Arrumar Celular",
     contato: "A&R Assisstência e acessórios 1",
