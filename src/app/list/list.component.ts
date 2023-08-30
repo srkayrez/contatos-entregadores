@@ -228,10 +228,10 @@ const Rodas : contatos[] = [
   },
   {
     area: "Arrumar Rodas",
-    contato: "Arrumar Rodas Gah Rodas",
+    contato: "Gah Rodas",
     telefone : 5516991964343,
-    localizacao : null,
-    temLocal: false
+    localizacao : 'https://goo.gl/maps/ERJcx3WhQT9SsG1Q6',
+    temLocal: true
   },
 ]
 
