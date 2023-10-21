@@ -130,6 +130,20 @@ const Borracheiro : contatos[]=[
     localizacao : null,
     temLocal: false
   },
+{
+    area: "Borracheiro",
+    contato: "Borracharia Sol 1",
+    telefone : 5516997654300,
+    localizacao : null,
+    temLocal: false
+  },
+{
+    area: "Borracheiro",
+    contato: "Borracharia Sol 2",
+    telefone : 5516997893569,
+    localizacao : null,
+    temLocal: false
+  },
   {
     area: "Borracheiro",
     contato: "Zomax 1",
