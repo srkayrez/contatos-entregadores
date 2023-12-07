@@ -203,6 +203,13 @@ const Borracheiro : contatos[]=[
 ]
 
 const Costura: contatos[] =[
+{
+    area: "Costura",
+    contato: "Resistence ateliê",
+    telefone : 5516997921846,
+    localizacao : "https://maps.app.goo.gl/aV8dAzWWuEsQzfDE6",
+    temLocal: true
+  },
   {
     area: "Costura",
     contato: "Oficina da Costura",
