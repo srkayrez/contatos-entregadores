@@ -92,6 +92,16 @@ const ArrumarCelular : contatos[] = [
     localizacao : "https://maps.app.goo.gl/DGcEDdGUuvFFtPYV9",
     temLocal : true
   },
+
+
+{
+    area: "Arrumar Celular",
+    contato: "ClayCell",
+    telefone : 5511957917841,
+    localizacao : "https://maps.app.goo.gl/DGcEDdGUuvFFtPYV9",
+    temLocal : false
+  },
+
   {
     area: "Arrumar Celular",
     contato: "A&R Assisstência e acessórios 1",
