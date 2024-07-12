@@ -124,20 +124,6 @@ const Borracheiro : contatos[]=[
     localizacao : null,
     temLocal: false
   },
-{
-    area: "Borracheiro",
-    contato: "Fabinho 1",
-    telefone : 5516996414436,
-    localizacao : null,
-    temLocal: false
-  },
-{
-    area: "Borracheiro",
-    contato: "Fabinho 2",
-    telefone : 5516997398986,
-    localizacao : null,
-    temLocal: false
-  },
   {
     area: "Borracheiro",
     contato: "Borracharia Movel 2",
