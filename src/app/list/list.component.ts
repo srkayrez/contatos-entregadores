@@ -126,6 +126,13 @@ const Borracheiro : contatos[]=[
   },
   {
     area: "Borracheiro",
+    contato: "Yuri Henrique",
+    telefone : 5516996224990,
+    localizacao : null,
+    temLocal: false
+  },
+  {
+    area: "Borracheiro",
     contato: "Borracharia Movel 2",
     telefone : 5516996377337,
     localizacao : null,
