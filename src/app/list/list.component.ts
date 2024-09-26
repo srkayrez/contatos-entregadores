@@ -126,7 +126,7 @@ const Borracheiro : contatos[]=[
   },
   {
     area: "Borracheiro",
-    contato: "Yuri Henrique",
+    contato: "Yuri SOS",
     telefone : 5516996224990,
     localizacao : null,
     temLocal: false
