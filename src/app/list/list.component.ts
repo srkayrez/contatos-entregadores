@@ -86,6 +86,13 @@ export interface contatos {
 
 const ArrumarCelular : contatos[] = [
 
+  {
+    area: "Arrumar Celular",
+    contato: "Shawzao",
+    telefone : 5511957917841,
+    localizacao : "https://maps.app.goo.gl/DGcEDdGUuvFFtPYV9",
+    temLocal : false
+  },
 {
     area: "Arrumar Celular",
     contato: "ClayCell",
