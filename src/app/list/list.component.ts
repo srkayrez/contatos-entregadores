@@ -339,6 +339,13 @@ const Guincho : contatos[] =[
 const Lojas: contatos[] = [
   {
     area: "Lojas",
+    contato: "Igor Moura motos peças",
+    telefone: 5516996099262,
+    localizacao: null,
+    temLocal: false
+  },
+  {
+    area: "Lojas",
     contato: "Rafael Manguito",
     telefone: 5516997555587,
     localizacao: null,
