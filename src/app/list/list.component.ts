@@ -332,6 +332,12 @@ const Guincho : contatos[] =[
     telefone: 5516997907574,
     temLocal: false
   },
+{
+    area: "Guincho",
+    contato: "Thiago Carretos e fretes",
+    telefone: 5516997211150,
+    temLocal: false
+  },
 
  
 ]
